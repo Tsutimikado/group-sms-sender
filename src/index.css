@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    @apply transition-all;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+
+    @apply transition-all bg-gray-100/25;
+}
+::-webkit-scrollbar-track:hover {
+    background: #f7f7f7;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #bbb;
+    margin-right:2px;
+    border:2px #f1f1f1 solid;
+    border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+
+/*
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    margin-right:2px;
+    border:3px #f1f1f1 solid;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}*/
+
+.btn-in-text_colors{
+  @apply text-gray-800 hover:bg-gray-100 active:bg-gray-200;
+}
+
+.btn-confirm_colors{
+    @apply border-gray-300 bg-gray-100 hover:bg-gray-400 hover:text-white;
+}
+
+.btn-confirm_style{
+    @apply font-semibold text-sm border-2 rounded-md px-2 py-1;
+}
+
+.expand-history-btn {
+    @apply absolute top-0 right-0 z-10 translate-x-[100%] text-2xl text-gray-300 font-semibold px-3 py-2 flex transition-all
+    hover:bg-white rounded-r-lg;
+
+}
+
+.expand-history-btn:hover .istory-span{
+    @apply w-[65px] text-left ;
+}
+
+.expand-history-btn:hover span{
+    @apply text-gray-600;
+}
+
+.expand-history-btn:hover div{
+    @apply text-gray-600;
+}
+
